@@ -16,7 +16,11 @@ class script(object):
     SAVED_RECVD_DOC_FILE = "File Downloaded Successfully"
     CUSTOM_CAPTION_UL_FILE = " "
     HELP_USER = """It's not that complicated
-    
-1. Send me any Telegram File.
-2. Choose appropriate option."""
+
+🍁 Send an image and it will be saved as your permanent Thumbnail
+
+🍁 Now send your file
+
+🍁 Select rename option and enter your new name ( extension is not required )"
+
 
