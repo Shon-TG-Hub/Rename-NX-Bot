@@ -3,7 +3,13 @@ class script(object):
 
 <b>Send me any Telegram file and choose appropriate option! </b>
 
-@NexonHex"""
+@NexonHex
+
+
+                [
+                    InlineKeyboardButton('Join NexonHex', url="t.me/Nexonhex")
+                    
+                ]"""
 
     RENAME_403_ERR = "What Are You Doing? You are Banned"
     UPGRADE_TEXT = "CONTACT @Fabio_TG"
