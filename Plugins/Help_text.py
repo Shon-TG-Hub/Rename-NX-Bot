@@ -50,6 +50,25 @@ def send_start(bot, update):
     )
 
 
+@pyrogram.Client.on_message(pyrogram.Filters.command(["start"]))
+async def start(bot, update):
+    # logger.info(update)
+    TRChatBase(update.from_user.id, update.text, "/start")
+    await bot.send_message(
+        chat_id=update.chat.id,
+        text=Translation.START_TEXT,
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [  
+                    InlineKeyboardButton('Help ❓', Callback_data="Help_Text")
+                    InlineKeyboardButton('About Me', Callback_data="About_Text")   
+                ],
+                [
+                    InlineKeyboardButton('⚠️ Join NexonHex ⚠️', Url="T.me/Nexonhex")
+                ]
+            ]
+        ),
+        reply_to_message_id=update.message_id
 @Client.on_message(filters.command(["upgrade"]))
 def upgrade(bot, update):
     # logger.info(update)
