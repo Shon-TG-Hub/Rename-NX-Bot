@@ -1,15 +1,9 @@
 class script(object):
     START_TEXT = """ A Simple File Renamer Bot With Permanent Thumbnail support!💯
 
-<b>Send me any Telegram file and choose appropriate option! </b>
+<b>Send me any Telegram file and choose appropriate option!
 
-@NexonHex
-
-
-                [
-                    InlineKeyboardButton('Join NexonHex', url="t.me/Nexonhex")
-                    
-                ]"""
+@Nexonhex """
 
     RENAME_403_ERR = "What Are You Doing? You are Banned"
     UPGRADE_TEXT = "CONTACT @Fabio_TG"
@@ -21,7 +15,11 @@ class script(object):
     NO_THUMB = "No thumbnails found!"
     SAVED_RECVD_DOC_FILE = "File Downloaded Successfully"
     CUSTOM_CAPTION_UL_FILE = " "
-    HELP_USER = """It's not that complicated
+    ABOUT_TEXT = """<b>Just An Rename Bot Maded By Team Nexon Hex Projects With Python3 Language And Pyrogram Framework<b>
+
+🍁 Contact Creator - [Shon](Https://t.me/Its_Me_shon)
+🍁 Source Code - [Click Here](https://github.com/Shon-TG-Hub/Rename-NX-Bot)"""
+HELP_USER = """It's not that complicated
 
 🍁 Send an image and it will be saved as your permanent Thumbnail
 
