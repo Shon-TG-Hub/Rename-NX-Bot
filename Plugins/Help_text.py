@@ -37,19 +37,6 @@ def help_user(bot, update):
     )
 
 
-@Client.on_message(filters.command(["start"]))
-def send_start(bot, update):
-    # logger.info(update)
-    
-    bot.send_message(
-        chat_id=update.chat.id,
-        text=script.START_TEXT.format(update.from_user.first_name),
-        parse_mode="html",
-        disable_web_page_preview=True,
-        reply_to_message_id=update.message_id
-    )
-
-
 @pyrogram.Client.on_message(pyrogram.Filters.command(["start"]))
 async def start(bot, update):
     # logger.info(update)
@@ -60,7 +47,7 @@ async def start(bot, update):
         reply_markup=InlineKeyboardMarkup(
             [
                 [  
-                    InlineKeyboardButton('Help ❓', Callback_data="Help_Text")
+                    InlineKeyboardButton('Help ❓', Callback_data="Help_User")
                     InlineKeyboardButton('About Me', Callback_data="About_Text")   
                 ],
                 [
@@ -68,6 +55,7 @@ async def start(bot, update):
                 ]
             ]
         ),
+
         reply_to_message_id=update.message_id
 @Client.on_message(filters.command(["upgrade"]))
 def upgrade(bot, update):
