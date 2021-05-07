@@ -1,4 +1,4 @@
-import logging
+9import logging
 logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
@@ -51,7 +51,7 @@ def send_start(bot, update):
                     InlineKeyboardButton("-------", url=""),
                 ],
      """           [
-                    InlineKeyboardButton("NexonHex Projects ❤", url="")
+                    InlineKeyboardButton("NexonHex Projects ❤", url="Https://telegram.me/NexonHex")
                 ], """ # Use If Needed 
             ]
         ),
@@ -100,11 +100,11 @@ async def rename_cb(bot, update):
         reply_markup=InlineKeyboardMarkup(
                                           [
                                            [
-                                            InlineKeyboardButton(text="📝 RENAME 📝", callback_data="rename_button"),
-                                            InlineKeyboardButton(text="✖️ CANCEL ✖️", callback_data="cancel_e"),
+                                            InlineKeyboardButton(text="RENAME", callback_data="rename_button"),
+                                            InlineKeyboardButton(text="CANCEL", callback_data="cancel_e"),
                                            ],
                                   """         [
-                                            InlineKeyboardButton(text="-----", url="https://"),
+                                            InlineKeyboardButton(text="Support Group", url="https://telegram.me/Nexonhex_Grp"),
                                            ], """ # Use If Needed 
                                           ]
                                          ),
