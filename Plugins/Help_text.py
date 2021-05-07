@@ -51,7 +51,7 @@ def send_start(bot, update):
                     InlineKeyboardButton("-------", url=""),
                 ],
      """           [
-                    InlineKeyboardButton("--------", url="")
+                    InlineKeyboardButton("NexonHex Projects ❤", url="")
                 ], """ # Use If Needed 
             ]
         ),
